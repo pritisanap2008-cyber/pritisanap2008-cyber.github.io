@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Priti Dnyaneshwar Sanap | AI and Machine Learning Enthusiast</title>
+<meta name="description" content="Portfolio of Priti Dnyaneshwar Sanap, a Physics student from Pune who is crazy about AI and Machine Learning. Projects, certificates, skills and contact.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Priti Dnyaneshwar Sanap | AI and Machine Learning Enthusiast">
+<meta property="og:description" content="Physics student from Pune who is crazy about AI and Machine Learning. Projects, certificates and skills.">
+<meta property="og:url" content="https://pritisanap2008-cyber.github.io/">
+<meta property="og:image" content="https://pritisanap2008-cyber.github.io/thumbnail.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  /* COLORS: change these to change the whole look */
+  :root{--bg:#fdf0f3;--rose:#f7b4c7;--petal:#ffe3ea;--berry:#c2255c;--plum:#2b1020;--muted:#6b4757;--line:rgba(43,16,32,.13);--white:#fff}
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--plum);font-family:"Plus Jakarta Sans",system-ui,sans-serif;font-size:1.02rem;line-height:1.65;overflow-x:hidden}
+  h1,h2,h3,p{margin:0}
+  a{color:var(--berry);text-underline-offset:3px}
+  a:focus-visible,.pill:focus-visible{outline:3px solid var(--plum);outline-offset:3px;border-radius:6px}
+
+  /* Pill button with round arrow (like the reference) */
+  .pill{display:inline-flex;align-items:center;gap:.8rem;padding:.35rem .35rem .35rem 1.3rem;background:var(--white);color:var(--plum);border-radius:999px;font-weight:700;font-size:.88rem;text-decoration:none}
+  .go{width:36px;height:36px;border-radius:50%;background:var(--berry);display:grid;place-items:center;flex:none;transition:transform .2s}
+  .go svg{width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+  .pill:hover .go{transform:translateX(3px)}
+  .pill.dark{background:var(--plum);color:#fff}
+
+  /* Hero */
+  .hero{position:relative;z-index:2;max-width:1240px;margin:14px auto 0;border-radius:30px 30px 64px 64px;overflow:hidden;
+    background:radial-gradient(60% 80% at 82% 30%,rgba(255,120,160,.5),transparent 70%),linear-gradient(135deg,#f6a3ba 0%,#fbc6d5 50%,#ffe6ee 100%);
+    padding:1.3rem clamp(1.2rem,4vw,3.2rem) 2.8rem}
+  .top{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+  .brand{display:flex;align-items:center;gap:.7rem;font-weight:800;color:var(--plum);text-decoration:none}
+  .brand img{width:40px;height:40px;border-radius:50%;object-fit:cover;transform:scale(1)}
+  nav{display:flex;align-items:center;gap:clamp(1rem,2.6vw,2rem)}
+  nav a.l{color:var(--plum);text-decoration:none;font-size:.9rem;font-weight:500}
+  nav a.l:hover{color:var(--berry)}
+  @media (max-width:760px){nav a.l{display:none}}
+  .hero-main{display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;padding:3.2rem 0 2.6rem}
+  @media (max-width:860px){.hero-main{grid-template-columns:1fr;padding-top:2rem}}
+  .hey{font-size:1.25rem;font-weight:500;margin-bottom:.4rem}
+  h1{font-size:clamp(2.9rem,8.2vw,5.8rem);font-weight:800;letter-spacing:-.035em;line-height:.98}
+  .right{position:relative;display:flex;flex-direction:column;gap:1.4rem;align-items:flex-start}
+  .art{position:relative;width:min(260px,70vw);aspect-ratio:1;align-self:center}
+  .art svg{position:absolute;inset:0;width:100%;height:100%}
+  .art circle{fill:none;stroke:var(--plum);transform-box:fill-box;transform-origin:center}
+  .r1{stroke-width:1;opacity:.35;stroke-dasharray:3 7;animation:spin 60s linear infinite}
+  .r2{stroke-width:2;opacity:.5;stroke-dasharray:80 40;animation:spin 36s linear infinite reverse}
+  .r3{stroke-width:1.5;opacity:.4;stroke-dasharray:14 10;animation:spin 24s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .art img{position:absolute;inset:27%;width:46%;height:46%;border-radius:50%;object-fit:cover;box-shadow:0 0 0 6px rgba(255,255,255,.7)}
+  .tag h2{font-size:1.35rem;font-weight:700;line-height:1.3;max-width:15em}
+  .tag p{margin-top:.5rem;color:var(--muted);font-size:.92rem;max-width:22em}
+  .nums{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;border-top:1px solid var(--line);padding-top:1.4rem}
+  @media (max-width:640px){.nums{grid-template-columns:repeat(2,1fr)}}
+  .nums b{display:block;color:var(--berry);font-size:.85rem}
+  .nums span{font-weight:500;font-size:.95rem}
+  @media (prefers-reduced-motion: reduce){.art circle{animation:none}html{scroll-behavior:auto}}
+
+  /* Strip under the hero */
+  .strip{max-width:1240px;margin:-40px auto 0;background:var(--rose);border-radius:0 0 44px 44px;padding:4.2rem clamp(1.2rem,4vw,3.2rem) 1.6rem;display:flex;flex-wrap:wrap;align-items:center;gap:1rem 2.4rem}
+  .strip p{font-weight:700;font-size:.8rem;max-width:9em;line-height:1.35}
+  .strip span{font-weight:800;font-size:1.05rem;display:inline-flex;align-items:center;gap:.5rem}
+  .strip i{width:16px;height:16px;border-radius:50%;border:3px solid var(--plum);display:inline-block}
+  .strip span:nth-of-type(2) i{border-radius:3px;transform:rotate(45deg)}
+  .strip span:nth-of-type(3) i{background:linear-gradient(90deg,var(--plum) 50%,transparent 50%)}
+  .strip span:nth-of-type(4) i{border-radius:5px 12px}
+
+  .wrap{max-width:1100px;margin:0 auto;padding:0 1.25rem}
+  section{padding:5rem 0 0}
+  h2.big{font-size:clamp(1.9rem,4.4vw,3rem);font-weight:800;letter-spacing:-.025em;line-height:1.1}
+  .lead{color:var(--berry);font-weight:700;margin-bottom:.8rem}
+
+  /* About */
+  .about{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+  @media (max-width:800px){.about{grid-template-columns:1fr;gap:1.5rem}}
+  .about p.t{font-size:1.2rem;font-weight:500;line-height:1.55}
+  .about .note{color:var(--muted);font-size:.9rem;margin:1.4rem 0 1.1rem}
+
+  /* ML projects as rows */
+  .sec-head{margin-bottom:2rem}
+  .rows{background:var(--white);border-radius:32px;padding:.6rem clamp(1.2rem,3vw,2.2rem);border:1px solid var(--line)}
+  .row{display:grid;grid-template-columns:1.1fr 1.4fr;gap:.5rem 2rem;padding:1.5rem 0;border-bottom:1px solid var(--line)}
+  .row:last-child{border-bottom:0}
+  @media (max-width:760px){.row{grid-template-columns:1fr}}
+  .row h3{font-size:1.2rem;font-weight:800;letter-spacing:-.01em}
+  .row p{color:var(--muted);font-size:.95rem}
+  .chips{list-style:none;margin:.7rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.4rem}
+  .chips li{background:var(--petal);border-radius:999px;padding:.15rem .8rem;font-size:.85rem;font-weight:500}
+  .row a{display:inline-block;margin-top:.6rem;font-size:.9rem;font-weight:700}
+
+  /* AI apps */
+  .apps{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.2rem;margin-top:1.2rem}
+  .app{border-radius:32px;padding:1.8rem;display:flex;flex-direction:column;gap:.6rem}
+  .app:nth-child(1){background:var(--rose)}
+  .app:nth-child(2){background:var(--petal)}
+  .app:nth-child(3){background:#f3d3e8}
+  .app h3{font-size:1.25rem;font-weight:800;letter-spacing:-.01em}
+  .app p{font-size:.95rem}
+  .app small{font-weight:700;font-size:.82rem}
+  .app a{margin-top:auto;padding-top:.6rem;font-weight:700;font-size:.9rem;color:var(--plum)}
+
+  /* Learning */
+  .learn{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
+  @media (max-width:800px){.learn{grid-template-columns:1fr}}
+  .panel{background:var(--white);border-radius:32px;padding:1.8rem;border:1px solid var(--line)}
+  .panel h3{font-size:1.15rem;font-weight:800;margin-bottom:.6rem}
+  .panel ul{list-style:none;margin:0;padding:0}
+  .panel li{padding:.65rem 0;border-bottom:1px solid var(--line);font-weight:500}
+  .panel li:last-child{border-bottom:0}
+  .panel small{display:block;color:var(--muted);font-size:.86rem;font-weight:400}
+  .panel .gap{margin-top:1.6rem}
+
+  /* Skills */
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.6rem 2rem}
+  .skills h3{font-size:1rem;font-weight:800;margin-bottom:.6rem}
+  .skills .chips{margin:0}
+  .skills .chips li{background:var(--white);border:1px solid var(--line)}
+
+  /* Contact */
+  .contact{max-width:1240px;margin:5.5rem auto 0;background:var(--plum);color:#fff;border-radius:64px 64px 0 0;padding:clamp(2.5rem,6vw,4.5rem) clamp(1.5rem,5vw,4rem) 2rem}
+  .contact h2{font-size:clamp(2rem,5.5vw,4rem);font-weight:800;letter-spacing:-.03em;line-height:1.05;max-width:12em}
+  .contact .btns{display:flex;flex-wrap:wrap;gap:.8rem;margin:2rem 0 3rem}
+  .contact .pill.out{background:transparent;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.5);padding-left:1.3rem}
+  .contact small{color:#e9b8c8;font-size:.88rem}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="top">
+    <a class="brand" href="#top"><img src="logo.jpg" alt="PS logo">Priti Sanap</a>
+    <nav aria-label="Main">
+      <a class="l" href="#top">Home</a>
+      <a class="l" href="#about">About</a>
+      <a class="l" href="#projects">Projects</a>
+      <a class="l" href="#learning">Learning</a>
+      <a class="pill" href="#contact"><span>Get in touch</span><i class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+    </nav>
+  </div>
+
+  <div class="hero-main">
+    <div>
+      <p class="hey">Hey, I’m Priti, a</p>
+      <h1>AI &amp; ML<br>Enthusiast</h1>
+    </div>
+    <div class="right">
+      <div class="art" aria-hidden="true">
+        <svg viewBox="-100 -100 200 200"><circle class="r1" r="96"/><circle class="r2" r="78"/><circle class="r3" r="62"/></svg>
+        <img src="logo.jpg" alt="">
+      </div>
+      <div class="tag">
+        <h2>Crazy about AI and Machine Learning.</h2>
+        <p>I am a Physics student from Pune. I learn by building real projects.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="nums">
+    <div><b>#01</b><span>6 ML projects</span></div>
+    <div><b>#02</b><span>3 AI apps</span></div>
+    <div><b>#03</b><span>7 certificates</span></div>
+    <div><b>#04</b><span>3 courses completed</span></div>
+  </div>
+</header>
+
+<div class="strip">
+  <p>Learning with courses from</p>
+  <span><i></i>Scaler Topics</span>
+  <span><i></i>HP LIFE</span>
+  <span><i></i>Outskill</span>
+  <span><i></i>Vizuara</span>
+</div>
+
+<main class="wrap">
+  <section id="about">
+    <div class="about">
+      <div>
+        <p class="lead">Behind the projects</p>
+        <h2 class="big">Learning by building things that work</h2>
+      </div>
+      <div>
+        <p class="t">Physics makes me think. AI and Machine Learning need the same kind of thinking, so they feel natural to me.</p>
+        <p class="note">B.Sc. Physics at Fergusson College, Pune (2026 to 2029). Minors in Geology and Electronic Science. I studied the science stream in 11th and 12th and appeared for JEE.</p>
+        <a class="pill dark" href="#contact"><span>Get in touch</span><i class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="sec-head">
+      <p class="lead">Machine Learning</p>
+      <h2 class="big">Six projects, each with real results</h2>
+    </div>
+    <div class="rows">
+      <article class="row">
+        <div><h3>Quora Question Pair Similarity</h3></div>
+        <div><p>Predicts if two questions mean the same thing.</p>
+          <ul class="chips"><li>XGBoost with TF-IDF</li><li>Log loss 0.4886</li><li>Accuracy 72.57%</li></ul>
+          <a href="https://github.com/pritisanap2008-cyber/quora-question-pair-similarity">View on GitHub</a></div>
+      </article>
+      <article class="row">
+        <div><h3>StackOverflow Tag Predictor</h3></div>
+        <div><p>Suggests tags for a question.</p>
+          <ul class="chips"><li>One-vs-Rest Logistic Regression</li><li>Micro F1 0.6459</li></ul>
+          <a href="https://github.com/pritisanap2008-cyber/stackoverflow_tag_prediction">View on GitHub</a></div>
+      </article>
+      <article class="row">
+        <div><h3>Taxi Demand Prediction</h3></div>
+        <div><p>Forecasts taxi pickups, using January 2024 NYC yellow taxi data.</p>
+          <ul class="chips"><li>XGBoost</li><li>MAE 9.21</li><li>MAPE 19.1%</li></ul>
+          <a href="https://github.com/pritisanap2008-cyber/taxi-demand-prediction">View on GitHub</a></div>
+      </article>
+      <article class="row">
+        <div><h3>Personalized Cancer Diagnosis</h3></div>
+        <div><p>Classifies genetic variations from the text of medical research.</p>
+          <ul class="chips"><li>Logistic Regression</li><li>Log loss 1.0115</li><li>Accuracy 67.97%</li></ul>
+          <a href="https://github.com/pritisanap2008-cyber/personalized-cancer-diagnosis">View on GitHub</a></div>
+      </article>
+      <article class="row">
+        <div><h3>Amazon Fashion Discovery Engine</h3></div>
+        <div><p>Finds similar fashion products from their text.</p>
+          <ul class="chips"><li>TF-IDF and cosine similarity</li><li>Precision@5 0.672</li></ul>
+          <a href="https://github.com/pritisanap2008-cyber/amazon-fashion-discovery-engine">View on GitHub</a></div>
+      </article>
+      <article class="row">
+        <div><h3>Netflix-style Movie Recommender</h3></div>
+        <div><p>Predicts movie ratings using the MovieLens dataset.</p>
+          <ul class="chips"><li>Item-based filtering</li><li>RMSE 0.8807</li></ul>
+          <a href="https://github.com/pritisanap2008-cyber/netflix-style-movie-recommendation">View on GitHub</a></div>
+      </article>
+    </div>
+
+    <div class="apps">
+      <article class="app">
+        <h3>SkillProof</h3>
+        <p>A web app that turns 5 answers into a portfolio website, a resume, and LinkedIn content.</p>
+        <small>Built with Claude AI and Replit Agent. Live.</small>
+        <a href="https://www.linkedin.com/in/pritisanap123">See it on LinkedIn</a>
+      </article>
+      <article class="app">
+        <h3>VerseGenie</h3>
+        <p>A chatbot that writes poems on any topic in 8 styles, like Sonnet, Haiku and Ballad.</p>
+        <a href="https://www.linkedin.com/in/pritisanap123">See it on LinkedIn</a>
+      </article>
+      <article class="app">
+        <h3>StoryGen AI</h3>
+        <p>Makes personalized children’s stories from a name, theme, age and lesson.</p>
+        <a href="https://www.linkedin.com/in/pritisanap123">See it on LinkedIn</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="learning">
+    <div class="sec-head">
+      <p class="lead">Always learning</p>
+      <h2 class="big">Certificates and courses</h2>
+    </div>
+    <div class="learn">
+      <div class="panel">
+        <h3>Certificates</h3>
+        <ul>
+          <li>Supervised Machine Learning<small>Scaler Topics, 2026</small></li>
+          <li>Unsupervised Machine Learning<small>Scaler Topics, 2026</small></li>
+          <li>Maths for Machine Learning<small>Scaler Topics, 2026</small></li>
+          <li>Java: Mastering the Fundamentals<small>Scaler Topics, 2026</small></li>
+          <li>Generative AI Mastermind<small>Outskill</small></li>
+          <li>Data Science &amp; Analytics<small>HP LIFE, 2026</small></li>
+          <li>Critical Thinking in the AI Era<small>HP LIFE, 2026</small></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Courses completed</h3>
+        <ul>
+          <li>Foundations for Machine Learning<small>Vizuara on YouTube</small></li>
+          <li>Machine Learning: Teach by Doing<small>Vizuara on YouTube</small></li>
+          <li>Building Neural Networks from Scratch<small>Vizuara on YouTube</small></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="sec-head">
+      <p class="lead">What I use</p>
+      <h2 class="big">Skills</h2>
+    </div>
+    <div class="skills">
+      <div><h3>Languages</h3><ul class="chips"><li>Python</li><li>Java</li></ul></div>
+      <div><h3>Libraries</h3><ul class="chips"><li>Pandas</li><li>NumPy</li><li>scikit-learn</li><li>Matplotlib</li><li>XGBoost</li></ul></div>
+      <div><h3>Topics</h3><ul class="chips"><li>Supervised learning</li><li>Unsupervised learning</li><li>Neural networks</li><li>Generative AI</li><li>LLMs</li><li>Maths for ML</li></ul></div>
+      <div><h3>Tools</h3><ul class="chips"><li>Google Colab</li><li>GitHub</li><li>Replit</li></ul></div>
+    </div>
+  </section>
+</main>
+
+<footer class="contact" id="contact">
+  <h2>Let’s build something meaningful together.</h2>
+  <div class="btns">
+    <a class="pill" href="mailto:pritisanap2008@gmail.com"><span>pritisanap2008@gmail.com</span><i class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+    <a class="pill out" href="https://github.com/pritisanap2008-cyber"><span>GitHub</span><i class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+    <a class="pill out" href="https://www.linkedin.com/in/pritisanap123"><span>LinkedIn</span><i class="go"><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></i></a>
+  </div>
+  <small>© 2026 Priti Dnyaneshwar Sanap. Pune, India.</small>
+</footer>
+
+</body>
+</html>
